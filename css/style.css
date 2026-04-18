@@ -2,7 +2,9 @@
    box-sizing: border-box;
 }
 body{
-    height: 7200px;  
+    width:100%; 
+   overflow-x:hidden;
+   
  }
  .home{
     width: 100%;
@@ -12,17 +14,24 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    text-align: center;}
+    text-align: center;
+ display: flex;
+    align-items: center;
+    justify-content: center;}
  .home-overly{
     position: absolute;
     width: 100%;
     height: 100%;
+    top:0;
+    left:0;
     background-color: rgba(0,0,0,0.4); }
  .home-parent{
     width:80% ;
     position: absolute;
     top:50% ;
     left:50% ;
+    z-index:2;
+    text-align:center;
     transform: translate(-50%,-50%);
     line-height: 0.5px;}
  .home-title1{
