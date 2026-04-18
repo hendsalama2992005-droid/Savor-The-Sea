@@ -1200,43 +1200,66 @@ transition:  1s ease-in-out;}
         padding: 0 !important;
     }
 
-    * {
-        box-sizing: border-box !important;
-        max-width: 100% !important;
+    .header, header {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 15px !important;
+        height: auto !important;
+        width: 100% !important;
     }
 
-    .home-parent, 
-    .home-container1, 
-    .home-container2,
-    .container,
-    section, 
-    div {
-        width: 100% !important;
-        flex-direction: column !important;
-        padding: 15px !important;
-        margin: 0 auto !important;
+    .container, 
+    .home-container2, 
+    .featured-works-container {
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .card, 
+    .home-container2 > div, 
+    .featured-works-container > div {
+        flex: 0 0 46% !important;
+        max-width: 46% !important;
+        margin: 5px !important;
+        min-width: 140px !important;
+    }
+
+    .home-parent {
+        padding-top: 100px !important;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        height: auto !important;
-        background-size: cover !important;
+    }
+
+    .btn, .home-button, .home-button1, .home-button2, .reserve-btn {
+        display: inline-block !important;
+        width: auto !important;
+        min-width: 130px !important;
+        margin: 10px 5px !important;
+        position: static !important;
     }
 
     img {
-        width: 90% !important;
+        max-width: 100% !important;
         height: auto !important;
-        margin: 10px auto !important;
-    }
-
-    .card, [class*="card"] {
-        width: 90% !important;
-        margin: 15px 0 !important;
     }
 
     h1, h2, h3 {
         font-size: 1.5rem !important;
-        line-height: 1.2 !important;
     }
+
+    p {
+        font-size: 1rem !important;
+    }
+}
 
     p {
         font-size: 1rem !important;
