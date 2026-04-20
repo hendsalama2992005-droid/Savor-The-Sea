@@ -46,7 +46,7 @@ body{
     font-weight: 300;
     line-height: 1.8;
     letter-spacing: 0.5px;
- text-align:center;}
+text-align:center; }
  .home-btn{
     height: 50px;
     width:180px ;
@@ -61,7 +61,7 @@ body{
      font-weight: 700;
      letter-spacing: 1.5px;
      color: black;
- text-align:center;}
+ align-items:center;}
  .home-btn2{
     background-color:rgb(255,127,80);
     color:#fff;
